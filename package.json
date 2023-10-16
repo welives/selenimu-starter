@@ -1,0 +1,41 @@
+{
+  "name": "ts-selenium-starter",
+  "version": "1.0.0",
+  "description": "selenium-webdriver学习",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "clear": "rimraf dist/*",
+    "build": "cross-env NODE_ENV=production npm run clear && cp .env.production dist/.env && tsc && tsc-alias",
+    "preview": "cross-env NODE_ENV=production node dist/index.js dotenv_config_path=dist/.env"
+  },
+  "keywords": [
+    "selenium-webdriver",
+    "typescript",
+    "eslint",
+    "prettier"
+  ],
+  "author": "welives",
+  "license": "MIT",
+  "dependencies": {
+    "chromedriver": "^118.0.1",
+    "selenium-webdriver": "^4.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.6",
+    "@types/selenium-webdriver": "^4.1.18",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.8",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2"
+  }
+}
