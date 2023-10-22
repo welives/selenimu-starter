@@ -5,5 +5,4 @@ dist
 .vscode
 *.code-workspace
 **/*.log
-.env
-.env.*
+.env*

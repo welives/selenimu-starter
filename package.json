@@ -1,14 +1,7 @@
 {
-  "name": "ts-selenium-starter",
-  "version": "1.0.0",
+  "name": "selenium-starter",
   "description": "selenium-webdriver学习",
-  "main": "dist/index.js",
-  "scripts": {
-    "dev": "nodemon",
-    "clear": "rimraf dist/*",
-    "build": "cross-env NODE_ENV=production npm run clear && cp .env.production dist/.env && tsc && tsc-alias",
-    "preview": "cross-env NODE_ENV=production node dist/index.js dotenv_config_path=dist/.env"
-  },
+  "version": "1.0.0",
   "keywords": [
     "selenium-webdriver",
     "typescript",
@@ -17,6 +10,13 @@
   ],
   "author": "welives",
   "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "clear": "rimraf dist/*",
+    "build": "cross-env NODE_ENV=production npm run clear && cp .env.production dist/.env && tsc && tsc-alias",
+    "preview": "cross-env NODE_ENV=production node dist/index.js dotenv_config_path=dist/.env"
+  },
   "dependencies": {
     "chromedriver": "^118.0.1",
     "selenium-webdriver": "^4.14.0"
