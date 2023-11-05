@@ -6,14 +6,21 @@
 
 ## 使用
 
-- `pnpm install`
-- `cp example.env .env`，然后修改环境变量
-- `pnpm dev`
+```sh
+pnpm install
+```
+
+## 开发模式
+
+```sh
+pnpm dev
+```
 
 ### 打包
 
-- `cp example.env .env.production`，然后修改环境变量
-- `pnpm build`
+```sh
+pnpm build
+```
 
 ## 相关文档
 
